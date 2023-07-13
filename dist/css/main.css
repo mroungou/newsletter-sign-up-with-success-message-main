@@ -17,7 +17,7 @@ body {
 }
 
 .signUp {
-  display: none;
+  display: contents;
 }
 
 main .header .desktop {
@@ -51,7 +51,7 @@ main .content form label {
 }
 main .content form .email {
   box-sizing: border-box;
-  border: 1px solid hsl(231, 7%, 60%);
+  border: 2px solid hsl(231, 7%, 60%);
   border-radius: 7px;
   padding: 1rem;
   width: 100%;
@@ -68,6 +68,7 @@ main .content form .submit, main .content form .dismiss {
   font-weight: 700;
 }
 main .success {
+  display: none;
   padding: 10rem 1rem;
 }
 main .success h1 {
@@ -84,4 +85,10 @@ main .success .dismiss {
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+}
+
+.has-error {
+  border: 2px hsl(4, 100%, 67%) solid !important;
+  color: hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.3);
 }/*# sourceMappingURL=main.css.map */

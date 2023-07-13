@@ -23,7 +23,7 @@ body {
 }
 
 .signUp {
-    display: none;
+    display: contents;
 }
 
 main {
@@ -63,7 +63,7 @@ main {
 
             .email {
                 box-sizing: border-box;
-                border: 1px solid $grey;
+                border: 2px solid $grey;
                 border-radius: 7px;
                 padding: 1rem;
                 width: 100%;
@@ -84,6 +84,7 @@ main {
         }
     }
     .success {
+        display: none;
         padding: 10rem 1rem;
         h1 {
             padding: 0 5rem 0 0;
@@ -101,4 +102,10 @@ main {
             font-weight: 700;
         }
     }
+}
+
+.has-error{
+    border: 2px $tomato solid !important;
+    color: $tomato;
+    background-color: hsla(4, 100%, 67%, 0.3);
 }
