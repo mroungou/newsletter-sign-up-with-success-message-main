@@ -1,0 +1,104 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+//  Colors
+//  Primary
+
+$tomato: hsl(4, 100%, 67%);
+
+// Neutral
+
+$darkSlateGrey: hsl(234, 29%, 20%);
+$charcoalGrey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+
+body {
+    background-color: $white;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: $charcoalGrey;
+    line-height: 1.5;
+}
+
+.signUp {
+    display: none;
+}
+
+main {
+    .header {
+        .desktop {
+            display: none;
+        }
+    }
+
+    .content {
+        padding: 0 1.5rem;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $darkSlateGrey;
+        }
+        ul {
+            list-style-image: url(/assets/images/icon-list.svg);
+            margin-block-start: 0;
+            padding-left: 1.75rem;
+            li {
+                align-items: center;
+                padding: 0;
+                margin: 0;
+
+            }
+        }
+
+        form {
+            label {
+                display: block;
+                font-size: 12px;
+                color: $darkSlateGrey;
+                font-weight: 700;
+                padding-bottom: 0.5rem;
+            }
+
+            .email {
+                box-sizing: border-box;
+                border: 1px solid $grey;
+                border-radius: 7px;
+                padding: 1rem;
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            .submit, .dismiss {
+                box-sizing: border-box;
+                border-radius: 7px;
+                padding: 1rem;
+                width: 100%;
+                margin-bottom: 1.5rem;
+                background-color: $darkSlateGrey;
+                color: $white;
+                font-weight: 700;
+            }
+
+        }
+    }
+    .success {
+        padding: 10rem 1rem;
+        h1 {
+            padding: 0 5rem 0 0;
+            line-height: 1;
+        }
+        .dismiss {
+            box-sizing: border-box;
+            border-radius: 7px;
+            padding: 1rem;
+            width: 100%;
+            margin-top: 12rem;
+            margin-bottom: 1.5rem;
+            background-color: $darkSlateGrey;
+            color: $white;
+            font-weight: 700;
+        }
+    }
+}
