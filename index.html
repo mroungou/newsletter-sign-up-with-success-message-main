@@ -13,9 +13,9 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
-<main>
+<main id="main">
     <!-- Sign-up form start -->
-  <div class="signUp">
+  <div class="signUp" id="sign-up">
     <div class="header">
       <img src="./assets/images/illustration-sign-up-mobile.svg" class="mobile" alt="">
       <img src="./assets/images/illustration-sign-up-desktop.svg" class="desktop" alt="">
@@ -29,9 +29,13 @@
           <li>And much more!</li>
         </ul>
         <form action="" class="form" id="form">
-          <div class="error"></div>
-          <label for="email">Email address</label>
-          <input type="email" name="email" id="email" class="email" placeholder="email@company.com">
+          <div class="input-field">
+            <div class="labels">
+              <label for="email">Email address</label>
+              <div class="error"></div>
+            </div>
+            <input type="email" name="email" id="email" class="email" placeholder="email@company.com">
+          </div>
           <input type="submit" class="submit" value="Subscribe to monthly newsletter">
         </form>
       </div>
@@ -40,12 +44,12 @@
     <!-- Sign-up form end -->
   
     <!-- Success message start -->
-  <div class="success">
+  <div class="success" id="success">
     <img src="./assets/images/icon-success.svg" alt="">
       <h1>Thanks for subscribing!</h1>
     
       <p>
-        A confirmation email has been sent to ash@loremcompany.com.
+        A confirmation email has been sent to <span id="successEmail" class="successEmail"></span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
     

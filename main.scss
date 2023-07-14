@@ -54,7 +54,7 @@ main {
 
         form {
             label {
-                display: block;
+                // display: block;
                 font-size: 12px;
                 color: $darkSlateGrey;
                 font-weight: 700;
@@ -104,8 +104,48 @@ main {
     }
 }
 
-.has-error{
+.has-error input{
     border: 2px $tomato solid !important;
     color: $tomato;
     background-color: hsla(4, 100%, 67%, 0.3);
+}
+
+.not-error input{
+    border-color: greenyellow;
+}
+
+.labels {
+    display: flex;
+    .error {
+        margin-left: auto;
+        font-size: 12px;
+        color: $darkSlateGrey;
+        font-weight: 700;
+        padding-bottom: 0.5rem;
+        color: $tomato;
+    }
+}
+
+.successEmail {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+    .signUp {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-content: center;
+        .header {
+            .mobile {
+                display: none;
+            }
+            .desktop {
+                display: block !important;
+            }
+        }
+        .content {
+            padding-top: 3rem;
+        }
+    }   
 }
