@@ -19,7 +19,7 @@ function validateEmail () {
     } else {
         setNoError(email);
         signUp.style.display = 'none';
-        success.style.display = 'contents';
+        success.style.display = 'block';
         successEmail.innerText = emailValue;
         main.style.padding = '1rem';
     }
